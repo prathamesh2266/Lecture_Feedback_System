@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback System</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        height: 581px;
+        background-color: #1f201f;
+      }
+
+      section {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1px;
+        flex-wrap: wrap;
+        overflow: hidden;
+      }
+
+      section::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#000, rgb(0, 255, 242), #000);
+        animation: animate 5s linear infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: translateY(-100%);
+        }
+
+        100% {
+          transform: translateY(100%);
+        }
+      }
+
+      section span {
+        position: relative;
+        display: block;
+        width: calc(4vw - 1px);
+        height: calc(4vw + 13px);
+        background: #181818;
+        z-index: 2;
+        transition: 1.5s;
+      }
+
+      section span:hover {
+        background: #000;
+        transition: 0s;
+      }
+
+      .container {
+        z-index: 100;
+        position: absolute;
+        min-width: 500px;
+        margin: 410px auto;
+        padding: 22px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        text-align: center;
+        background-color: #222;
+      }
+
+      h2 {
+        padding: 5px 0 5px 0;
+        background: linear-gradient(
+          45deg,
+          #578fd3 0%,
+          #00fffb 49%,
+          #578fd3 100%
+        );
+        background-clip: text;
+        color: transparent;
+        box-shadow: 0 0 10px #00fffb;
+        border-radius: 200px;
+        user-select: none;
+      }
+
+      h2:hover {
+        box-shadow: 0 0 13px #00fffb;
+        transition: 0.1s;
+      }
+
+      h3 {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        color: #999;
+        background-color: #1f211f;
+        border-radius: 10px;
+        width: 300px;
+      }
+
+      .login-options {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin: 5px 10px 5px 10px;
+        background-color: black;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #ff671f;
+        box-shadow: 0 0 10px rgba(255, 103, 31, 8);
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <section>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+      <span></span> <span></span> <span></span> <span></span> <span></span>
+
+      <div class="container">
+        <h2>Welcome to the Feedback System</h2>
+        <h3>Please select your login option:</h3>
+        <div class="login-options">
+          <a href="student_login.php" class="btn">Student Login</a>
+          <a href="admin_login.php" class="btn">Admin Login</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

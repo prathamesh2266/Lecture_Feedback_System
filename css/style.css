@@ -1,0 +1,75 @@
+body{
+    background-color: #1f201f;
+}
+
+.container {
+    color:white;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    background-color: #222;
+}
+
+h2{
+    margin: 20px auto 30px auto;
+    font-size: 23px;
+    padding: 5px 15px 5px 20px;
+    background: linear-gradient(45deg,  #578fd3 0%, #00fffb 49%, #578fd3 100%);
+    background-clip: text;
+    color: transparent;
+    box-shadow: 0 0 7px #00fffb;
+    border-radius: 200px;
+    max-width: 157px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+select {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    color:white;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    background-color: #3a3b3a;
+}
+
+
+input[type="checkbox"],
+label{
+    cursor: pointer;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 15px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff671f;
+    box-shadow: 0 0 10px rgba(255, 103, 31, 10);
+    border-radius: 15px;
+}

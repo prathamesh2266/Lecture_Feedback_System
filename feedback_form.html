@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Feedback Form</h2>
+        <form action="process_feedback.php" method="post">
+            <label for="lecture">Select Lecture:</label>
+            <select name="lecture" id="lecture">
+                <option value="lecture1_CPP">Lecture 1 CPP</option>
+                <option value="lecture2_Adv_PHP">Lecture 2 Adv PHP</option>
+                <option value="lecture3_Networking">Lecture 3 Networking</option>
+                <option value="lecture4_Operating_System">Lecture 4 Operating System</option>
+            </select>
+            <label for="feedback">Feedback:</label>
+            <textarea name="feedback" id="feedback" rows="5" required></textarea>
+            
+            <button type="submit" name="submit">Submit Feedback</button>
+        </form>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Feedback Form</h2>
+      <form action="process_feedback.php" method="post">
+        <!-- Feedback form fields -->
+        <label for="lecture">Select Lecture:</label>
+        <select name="lecture" id="lecture">
+          <option value="lecture1_CPP">Lecture 1 CPP</option>
+          <option value="lecture2_Adv_PHP">Lecture 2 Adv PHP</option>
+          <option value="lecture3_Networking">Lecture 3 Networking</option>
+          <option value="lecture4_Operating_System">
+            Lecture 4 Operating System
+          </option>
+          <!-- Add more options as needed -->
+        </select>
+
+        <label for="feedback">Feedback:</label>
+        <textarea name="feedback" id="feedback" rows="5" required></textarea>
+        
+        <!-- rating area -->
+        <label for="rating">Rate the lecture:</label>
+        <div class="rating">
+          <input type="radio" id="star5" name="rating" value="1" required />
+          <label f
+          or="star5" title="5 stars">1★</label>
+          <input type="radio" id="star4" name="rating" value="2" />
+          <label for="star4" title="4 stars">2★</label>
+          <input type="radio" id="star3" name="rating" value="3" />
+          <label for="star3" title="3 stars">3★</label>
+          <input type="radio" id="star2" name="rating" value="4" />
+          <label for="star2" title="2 stars">4★</label>
+          <input type="radio" id="star1" name="rating" value="5" />
+          <label for="star1" title="1 star">5★</label>
+        </div>
+
+        <button type="submit" name="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </body>
+</html>

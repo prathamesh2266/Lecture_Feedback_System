@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Student</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        h2{
+            max-width:180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add New Student</h2>
+        <form action="process_add_student.php" method="post">
+            <label for="student_id">Student ID:</label>
+            <input type="text" name="student_id" id="student_id" required>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username" required>
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" required>
+            <button type="submit" name="submit">Add Student</button>
+        </form>
+        <a href="admin_dashboard.html" class="btn">Back to Dashboard</a>
+    </div>
+</body>
+</html>
